@@ -11,24 +11,31 @@
         </style>
 </head>
 
+<div id="Top">
+    <header>
+        <div style="text-align:center;background:rgb(186, 220, 17);">
+            
+                <hr>
+                <h1>MY PROFILE</h1>
+                <hr>
+        </div>
+        <div style="float:right">
+            
+                <a href="#Summary">Summary</a>
+                <a href="#TechSkills">Technical Skills</a>
+                <a href="#SoftSkills">Soft Skills</a>
+                <a href="#Hobbies">Hobbies</a>
+                <a href="#Map">Location Map</a>
+
+            
+        </div>
+    </header>
+</div>
+
+
+
 <body>
-    <div id="Top">
-        <header>
-            <div style="text-align:center">
-                <span>
-                    <h1 style="background:rgb(220, 88, 17)">MY PROFILE</h1>
-                </span>
-                <span>
-                    <a href="#Summary">Summary</a>
-                    <a href="#Skills">Skills</a>
-                    <a href="#Hobbies">Hobbies</a>
-                    <a href="#Map">Location Map</a>
-                </span>
-            </div>
-        </header>
-    </div>
-    <hr>
-    <hr>
+    
     <!--Photo-->
 
     <div style="float:left;margin-left:5%;height:350px;width:20%">
@@ -36,19 +43,17 @@
         <img src="Profilepic.jpg" title="Sarthak Kumar" alt="Sarthak Profile Pic" Height="350px" Width="300px" />
 
     </div>
-    </div>
+    
 
     <!--Name-->
     <div style="margin-left:5%;height:100px;width:20%">
-
         <h1>SARTHAK KUMAR</h1>
     </div>
 
 
     <!--SUMMARY-->
     <div id="Summary">
-
-        <div style="float:left;width:71%;margin-left:4%">
+        <div style="float:left;width:73%;margin-left:2%">
             <hr>
             <h1>About Me</h1>
             <hr>
@@ -65,14 +70,17 @@
         </div>
     </div>
 
-    <!--SKILLS-->
-    <div id="Skills">
+    <!--Technical SKILLS-->  <!--DOUBT, considering div of summary as well, not coming on top if clicking on id at top-->
+    <div id="TechSkills">
         <hr>
-        <div style="background:rgb(0, 255, 136);text-align:center">
-            <h1>Skills</h1>
+        <div style="background:rgb(0, 255, 234);text-align:center">
+            <hr>
+            <h1>Technical Skills</h1>
+            <hr>
         </div>
-        <hr>
-        <div>
+        
+        
+        <div style="text-align: center">
             <span>
                 <img src="images/HTML5_logo.png" alt="HTMLlogo" title="HTML" Height="150px" Width="150px" />
                 <img src="images/CSS_logo.png" alt="CSSlogo" title="CSS" Height="150px" Width="110px" />
@@ -91,13 +99,38 @@
         </div>
     </div>
 
+    <!--Soft Skills-->
+    <div id="SoftSkills">
+        <div style="text-align:center;background:orangered">
+            <hr>
+            <h1>Soft Skills</h1>
+            <hr>
+        </div>
+
+        <div >
+            <ul>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Problem Solving</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Critical Thinking</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Flexibility</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Analytical Skills</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Time Management</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Negotiation skills</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Creative thinking</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Adaptibility</li>
+                <li style="color:rgb(0, 0, 0);font-size:25px">Decision Making</li>
+            </ul>
+        </div>
+    </div>
+
     <!--HOBBIES-->
     <div id="Hobbies">
-        <hr>
+        
         <div style="background: rgb(0, 106, 255);text-align:center">
+            <hr>
             <h1>Hobbies</h1>
+            <hr>
         </div>
-        <hr>
+        
         <div>
             <ul>
                 <li style="color:rgb(0, 0, 0);font-size:25px">Photography</li>
@@ -111,11 +144,13 @@
     </div>
     <!--Adding Google Map-->
     <div id="Map">
-        <hr>
+        
         <div style="background:rgb(152, 93, 240);text-align:center">
+            <hr>
             <h1>Location Map</h1>
+            <hr>
         </div>
-        <hr>
+        
         <div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.6219306217668!2d86.42663571534565!3d23.832039491568814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bbc47265501d%3A0x5a6e7a8817338022!2sBlue%20Diamond%20Apartment!5e0!3m2!1sen!2sin!4v1676825031519!5m2!1sen!2sin"
