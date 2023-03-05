@@ -1,0 +1,73 @@
+#back{
+    background-image: url("images/bg.png")
+}
+.top{
+    text-align:center;
+    background:rgb(186, 220, 17);
+}
+
+.id{
+    float:right;
+    border:2px rgb(255, 254, 254);         <!--not wrking-->
+}
+
+.photo{
+    float:left;
+    margin-left:3%;
+    height:350px;
+    width:20%;
+    border:1px rgb(0, 0, 0);                <!--not wrking-->
+}
+
+
+.name{
+    margin-left:3%;
+    height:80px;
+    width:20%;
+}
+
+.soft{
+    text-align:center;
+    background:orangered;
+}
+
+.softlist{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+
+}
+
+.tech{
+    background:rgb(0, 255, 234);
+    text-align:center;
+}
+
+.summary{
+    float:left;
+    width:73%;
+    margin-left:2%;
+    
+}
+
+#container{
+    display:inline-block
+}
+
+.border{
+    border:2px solid black;
+}
+
+.hobbies{
+    background: rgb(0, 106, 255);
+    text-align:center;
+}
+
+.hblist{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+}
+
+.map{
+    background:rgb(152, 93, 240);
+    text-align:center;
+}

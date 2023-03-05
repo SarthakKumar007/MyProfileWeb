@@ -3,23 +3,99 @@
 <head>
     <title>Sarthak Profile</title>
     <link href="images/Sletter.png" rel="icon" />
-    <div>
-        <style>
-            body {
-                background-image: url("images/bg.png");
-            }
-        </style>
+   <link href="MyProfile.css" rel="index"> <!--not getting linked-->
+
+   <div>
+    <style>
+        
+#back{
+    background-image: url("images/bg.png")
+}
+.top{
+    text-align:center;
+    background:rgb(186, 220, 17);
+}
+
+.id{
+    float:right;
+    border:2px solid rgb(255, 254, 254);         <!--necessary to give "solid" before color name?-->
+}
+
+.photo{
+    float:left;
+    margin-left:3%;
+    height:350px;
+    width:18%;
+    border:1px solid rgb(0, 0, 0);               <!--necessary to give "solid" before color name?-->
+}
+
+
+.name{
+    margin-left:4%;
+    height:80px;
+    width:18%;
+}
+
+.summary{
+    float:left;
+    width:75%;
+    margin-left:2%;  
+}
+
+.border{
+    border:2px solid black;
+}
+
+.soft{
+    text-align:center;
+    background:orangered;
+}
+
+.softlist{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+
+}
+
+.tech{
+    background:rgb(0, 255, 234);
+    text-align:center;
+}
+
+
+#container{
+    display:inline-block
+}
+
+
+.hobbies{
+    background: rgb(0, 106, 255);
+    text-align:center;
+}
+
+.hblist{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+}
+
+.map{
+    background:rgb(152, 93, 240);
+    text-align:center;
+}
+
+    </style>
+   </div>
 </head>
 
 <div id="Top">
     <header>
-        <div style="text-align:center;background:rgb(186, 220, 17);">
+        <div class="top">
             
                 <hr>
                 <h1>MY PROFILE</h1>
                 <hr>
         </div>
-        <div style="float:right">
+        <div class="id">
             
                 <a href="#Summary">Summary</a>
                 <a href="#TechSkills">Technical Skills</a>
@@ -34,27 +110,28 @@
 
 
 
-<body>
-    
+<body ID="back">
+
+<div ID="container" >
     <!--Photo-->
 
-    <div style="float:left;margin-left:5%;height:350px;width:20%">
+    <div class="photo">
 
-        <img src="Profilepic.jpg" title="Sarthak Kumar" alt="Sarthak Profile Pic" Height="350px" Width="300px" />
+        <img src="Profilepic.jpg" alt="Sarthak kumar" title="Sarthak kumar" height="350px" width=100%>
 
     </div>
     
 
     <!--Name-->
-    <div style="margin-left:5%;height:100px;width:20%">
+    <div class="name">
         <h1>SARTHAK KUMAR</h1>
     </div>
 
 
     <!--SUMMARY-->
     <div id="Summary">
-        <div style="float:left;width:73%;margin-left:2%">
-            <hr>
+        <div class="summary border">
+            
             <h1>About Me</h1>
             <hr>
             <p style="font-size:25;">
@@ -69,11 +146,12 @@
             </p>
         </div>
     </div>
+</div>
 
     <!--Technical SKILLS-->  <!--DOUBT, considering div of summary as well, not coming on top if clicking on id at top-->
     <div id="TechSkills">
         <hr>
-        <div style="background:rgb(0, 255, 234);text-align:center">
+        <div class="tech">
             <hr>
             <h1>Technical Skills</h1>
             <hr>
@@ -101,23 +179,23 @@
 
     <!--Soft Skills-->
     <div id="SoftSkills">
-        <div style="text-align:center;background:orangered">
+        <div class="soft">
             <hr>
             <h1>Soft Skills</h1>
             <hr>
         </div>
 
-        <div >
+        <div class="softlist">
             <ul>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Problem Solving</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Critical Thinking</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Flexibility</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Analytical Skills</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Time Management</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Negotiation skills</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Creative thinking</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Adaptibility</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Decision Making</li>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>Flexibility</li>
+                <li>Analytical Skills</li>
+                <li>Time Management</li>
+                <li>Negotiation skills</li>
+                <li>Creative thinking</li>
+                <li>Adaptibility</li>
+                <li>Decision Making</li>
             </ul>
         </div>
     </div>
@@ -125,27 +203,27 @@
     <!--HOBBIES-->
     <div id="Hobbies">
         
-        <div style="background: rgb(0, 106, 255);text-align:center">
+        <div class="hobbies">
             <hr>
             <h1>Hobbies</h1>
             <hr>
         </div>
         
-        <div>
+        <div class="hblist">
             <ul>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Photography</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Painting</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Cooking</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Beatboxing</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Traveling</li>
-                <li style="color:rgb(0, 0, 0);font-size:25px">Reading</li>
+                <li>Photography</li>
+                <li>Painting</li>
+                <li>Cooking</li>
+                <li>Beatboxing</li>
+                <li>Traveling</li>
+                <li>Reading</li>
             </ul>
         </div>
     </div>
     <!--Adding Google Map-->
     <div id="Map">
         
-        <div style="background:rgb(152, 93, 240);text-align:center">
+        <div class="map">
             <hr>
             <h1>Location Map</h1>
             <hr>
@@ -158,12 +236,14 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+
+    
 </body>
 <hr>
 <hr>
 <Footer>
     <div>
-        <span style="float:right;text-align:center">
+        <span style="float:right">
 
             <!--Gmail-->
             <a href="mailto:sarthakkumar0701@gmail.com" target="_blank">
